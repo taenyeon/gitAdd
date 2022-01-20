@@ -13,6 +13,7 @@ public class Mission_BoardDeleteController implements Controller {
         BoardService boardService = new BoardService();
         String no = request.getParameter("no");
         int result = boardService.deleteBoard(no);
+        System.out.println("Test Commit");
 
         response.setContentType("text/html; charset=UTF-8");
         PrintWriter w = response.getWriter();

@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 public class Mission_MemberLogoutController implements Controller {
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        System.out.println("Test3");
         HttpSession session = request.getSession(false);
         String login = (String) session.getAttribute("login");
 

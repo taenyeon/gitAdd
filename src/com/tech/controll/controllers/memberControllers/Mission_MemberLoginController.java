@@ -13,6 +13,7 @@ import java.io.PrintWriter;
 public class Mission_MemberLoginController implements Controller {
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        System.out.println("Test1 -2");
         if (request.getMethod().equals("GET")){
         System.out.println(request.getRequestURI());
         response.sendRedirect("/member/loginForm.jsp");
