@@ -22,6 +22,7 @@ public class FrontController extends HttpServlet {
         // 회원가입 관련 URI
         if (requestURI.equals("/member/join.do")){
             controller = new Mission_MemberJoinController();
+            System.out.println("Test1-3");
         }
          // 로그인 관련 URI
         if (requestURI.equals("/member/login.do")){
