@@ -15,6 +15,7 @@ import java.util.List;
 
 public class BoardRepository {
     private Connection getConnection() throws NamingException, SQLException {
+        System.out.println("Before merge test2");
         Connection con;
         Context initCtx = new InitialContext();
         Context envCtx = (Context) initCtx.lookup("java:comp/env");
