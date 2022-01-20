@@ -14,6 +14,7 @@ public class MemberService  {
 
 
     public String login(String id,String pwd) throws Exception {
+        System.out.println("Test4");
         memberRepository = new MemberRepository();
             String session = null;
             bowlMember member = memberRepository.findByID(id);
