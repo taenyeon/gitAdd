@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 public class Mission_MemberInfoController implements Controller {
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        System.out.println("Test2");
         if (request.getMethod().equals("GET")){
         response.sendRedirect("/member/infoForm.jsp");
         }
